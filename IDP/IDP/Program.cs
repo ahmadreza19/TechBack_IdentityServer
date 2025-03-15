@@ -1,5 +1,6 @@
 ﻿using Duende.IdentityServer;
 using Duende.IdentityServer.Models;
+using System.Security.Claims;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,7 +15,22 @@ builder.Services.AddIdentityServer()
     // تعریف کاربران آزمایشی برای احراز هویت
     // در حال حاضر لیست خالی است و باید کاربران آزمایشی را اضافه کنید
     .AddTestUsers(new List<Duende.IdentityServer.Test.TestUser>()
-    { })
+    {
+    new Duende.IdentityServer.Test.TestUser()
+    {
+        Username="ahmad",
+        Password="123456",
+        IsActive=true,
+        SubjectId="1",
+         Claims=new List<Claim>()
+         {
+             new Claim (ClaimTypes.Email,"ahmadreza@gmail.com"),
+             new Claim(ClaimTypes.MobilePhone,"09918394008"),
+             new Claim("FullName","AhmadReza Jafari")
+         }
+    }
+    
+    })
 
     // تعریف منابع API که می‌خواهید محافظت کنید
     // این لیست در حال حاضر خالی است و نیاز به تکمیل دارد
