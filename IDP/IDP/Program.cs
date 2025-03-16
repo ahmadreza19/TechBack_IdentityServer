@@ -1,65 +1,101 @@
-﻿using Duende.IdentityServer;
-using Duende.IdentityServer.Models;
+﻿using Duende.IdentityServer.Models;
 using System.Security.Claims;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// ✨ افزودن سرویس‌های MVC به برنامه برای پشتیبانی از کنترلرها و نماها
 builder.Services.AddControllersWithViews();
-// اضافه کردن سرویس IdentityServer به کانتینر سرویس‌های برنامه
+
+// ✨ افزودن IdentityServer به برنامه برای احراز هویت و مدیریت دسترسی کاربران
 builder.Services.AddIdentityServer()
-    // افزودن یک گواهی امضای موقت برای محیط توسعه
-    // هشدار: این روش فقط برای محیط توسعه مناسب است، نه برای محیط تولید
+    // ⚠ ایجاد یک گواهی امضای موقت برای محیط توسعه
+    // 🚨 هشدار: این روش فقط برای **محیط توسعه** مناسب است و نباید در محیط **تولید** استفاده شود.
     .AddDeveloperSigningCredential()
 
-    // تعریف کاربران آزمایشی برای احراز هویت
-    // در حال حاضر لیست خالی است و باید کاربران آزمایشی را اضافه کنید
-    .AddTestUsers(new List<Duende.IdentityServer.Test.TestUser>()
+    // ✨ تعریف کاربران تستی برای لاگین در سیستم
+    .AddTestUsers(new List<Duende.IdentityServer.Test.TestUser>
     {
-    new Duende.IdentityServer.Test.TestUser()
-    {
-        Username="ahmad",
-        Password="123456",
-        IsActive=true,
-        SubjectId="1",
-         Claims=new List<Claim>()
-         {
-             new Claim (ClaimTypes.Email,"ahmadreza@gmail.com"),
-             new Claim(ClaimTypes.MobilePhone,"09918394008"),
-             new Claim("FullName","AhmadReza Jafari")
-         }
-    }
-    
+        new Duende.IdentityServer.Test.TestUser
+        {
+            Username = "ahmad", // نام کاربری
+            Password = "123456", // رمز عبور
+            IsActive = true, // فعال بودن کاربر
+            SubjectId = "1", // شناسه یکتا کاربر
+
+            // 🎯 اطلاعات کاربر به صورت **Claim** ذخیره می‌شود.
+            Claims = new List<Claim>
+            {
+                new Claim(ClaimTypes.Email, "ahmadreza@gmail.com"), // ایمیل
+                new Claim(ClaimTypes.MobilePhone, "09918394008"), // شماره موبایل
+                new Claim("FullName", "AhmadReza Jafari"), // نام کامل
+                new Claim("website", "https://TechBack.com") // وب‌سایت
+            }
+        }
     })
 
-    // تعریف منابع API که می‌خواهید محافظت کنید
-    // این لیست در حال حاضر خالی است و نیاز به تکمیل دارد
-    .AddInMemoryApiResources(new List<ApiResource>()
-    { })
+    // ✨ تعریف منابع **هویتی** (Identity Resources)
+    .AddInMemoryIdentityResources(new List<IdentityResource>
+    {
+        new IdentityResources.OpenId(),  // شناسایی کاربر
+        new IdentityResources.Phone(),   // شماره موبایل
+        new IdentityResources.Profile(), // اطلاعات پروفایل
+        new IdentityResources.Email(),   // ایمیل
+        new IdentityResources.Address(), // آدرس
+    })
 
-    // تعریف کلاینت‌هایی که می‌توانند به API‌ها دسترسی داشته باشند
-    // این لیست نیز خالی است و باید با کلاینت‌های مورد نظر پر شود
-    .AddInMemoryClients(new List<Client>() { }); var app = builder.Build();
+    // ✨ تعریف منابع **API** (در اینجا لیست خالی است، اما می‌توان APIهای محافظت‌شده را اضافه کرد)
+    .AddInMemoryApiResources(new List<ApiResource>
+    {
+        // در اینجا منابع API محافظت‌شده اضافه می‌شود.
+    })
 
-// Configure the HTTP request pipeline.
+    // ✨ تعریف **کلاینت‌هایی** که می‌توانند به سیستم احراز هویت متصل شوند
+    .AddInMemoryClients(new List<Client>
+    {
+        new Client
+        {
+            ClientId = "TechBack", // شناسه کلاینت (باید در کلاینت نیز مقدار مشابهی تنظیم شود)
+            ClientSecrets = new List<Secret> { new Secret("123456".Sha256()) }, // رمز کلاینت (باید هش شده باشد)
+            
+            AllowedGrantTypes = GrantTypes.Code, // استفاده از **Authorization Code Flow**
+            RequirePkce = true, // فعال کردن PKCE برای امنیت بیشتر
+
+            // ✨ مسیرهای مهم برای هدایت کاربر بعد از ورود و خروج
+            RedirectUris = { "https://localhost:44334/signin-oidc" }, // بازگشت بعد از ورود
+            PostLogoutRedirectUris = { "https://localhost:44334/signout-callback-oidc" }, // بازگشت بعد از خروج
+
+            // ✨ مشخص کردن **سطح دسترسی (Scopes)** که کلاینت مجاز به دریافت آن‌ها است
+            AllowedScopes = new List<string>
+            {
+                "openid",   // شناسه کاربری
+                "profile",  // اطلاعات پروفایل
+                "email"     // ایمیل کاربر
+            },
+
+            RequireConsent = true, // فعال کردن صفحه تأیید مجوزها برای امنیت بیشتر
+        }
+    });
+
+var app = builder.Build();
+
+// ✨ تنظیمات برای مدیریت درخواست‌ها و مسیرهای HTTP
 if (!app.Environment.IsDevelopment())
 {
-    app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
+    app.UseExceptionHandler("/Home/Error"); // فعال کردن هندلر خطا در محیط تولید
+    app.UseHsts(); // فعال کردن HSTS برای افزایش امنیت
 }
-app.UseHttpsRedirection();
-app.UseRouting();
-app.UseIdentityServer();
 
-app.UseAuthorization();
+app.UseHttpsRedirection(); // ریدایرکت تمام درخواست‌ها به HTTPS
+app.UseRouting(); // فعال کردن مسیریابی درخواست‌ها
 
-app.MapStaticAssets();
+app.UseIdentityServer(); // فعال کردن IdentityServer برای احراز هویت
 
+app.UseAuthorization(); // فعال کردن مجوزدهی
+
+// ✨ تنظیم مسیر پیش‌فرض برای کنترلرها
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}")
-    .WithStaticAssets();
-
+    .WithStaticAssets(); // پشتیبانی از فایل‌های استاتیک
 
 app.Run();

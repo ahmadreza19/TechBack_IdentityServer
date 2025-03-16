@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\AhmadReza\\Desktop\\Identity_Server4\\IDP\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A4EF4AFA-2D11-4519-B600-44C3BA0BED34}|TeckBackClientMVC\\TeckBackClientMVC.csproj|c:\\users\\ahmadreza\\desktop\\identity_server4\\idp\\teckbackclientmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4EF4AFA-2D11-4519-B600-44C3BA0BED34}|TeckBackClientMVC\\TeckBackClientMVC.csproj|solutionrelative:teckbackclientmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D94B39D5-B9C7-4ABB-A303-9CF5732D4E4E}|IDP\\IDP.csproj|c:\\users\\ahmadreza\\desktop\\identity_server4\\idp\\idp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D94B39D5-B9C7-4ABB-A303-9CF5732D4E4E}|IDP\\IDP.csproj|solutionrelative:idp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4EF4AFA-2D11-4519-B600-44C3BA0BED34}|TeckBackClientMVC\\TeckBackClientMVC.csproj|c:\\users\\ahmadreza\\desktop\\identity_server4\\idp\\teckbackclientmvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4EF4AFA-2D11-4519-B600-44C3BA0BED34}|TeckBackClientMVC\\TeckBackClientMVC.csproj|solutionrelative:teckbackclientmvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4EF4AFA-2D11-4519-B600-44C3BA0BED34}|TeckBackClientMVC\\TeckBackClientMVC.csproj|c:\\users\\ahmadreza\\desktop\\identity_server4\\idp\\teckbackclientmvc\\views\\home\\userpanel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4EF4AFA-2D11-4519-B600-44C3BA0BED34}|TeckBackClientMVC\\TeckBackClientMVC.csproj|solutionrelative:teckbackclientmvc\\views\\home\\userpanel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D94B39D5-B9C7-4ABB-A303-9CF5732D4E4E}|IDP\\IDP.csproj|c:\\users\\ahmadreza\\desktop\\identity_server4\\idp\\idp\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -66,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 18,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Bookmark",
@@ -119,19 +131,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\AhmadReza\\Desktop\\Identity_Server4\\IDP\\IDP\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "IDP\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\AhmadReza\\Desktop\\Identity_Server4\\IDP\\IDP\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "IDP\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-15T12:23:34.972Z",
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\AhmadReza\\Desktop\\Identity_Server4\\IDP\\TeckBackClientMVC\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "TeckBackClientMVC\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\AhmadReza\\Desktop\\Identity_Server4\\IDP\\TeckBackClientMVC\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "TeckBackClientMVC\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T13:35:31.366Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\AhmadReza\\Desktop\\Identity_Server4\\IDP\\IDP\\Program.cs",
+              "RelativeDocumentMoniker": "IDP\\Program.cs",
+              "ToolTip": "C:\\Users\\AhmadReza\\Desktop\\Identity_Server4\\IDP\\IDP\\Program.cs",
+              "RelativeToolTip": "IDP\\Program.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAGUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T07:32:39.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserPanel.cshtml",
+              "DocumentMoniker": "C:\\Users\\AhmadReza\\Desktop\\Identity_Server4\\IDP\\TeckBackClientMVC\\Views\\Home\\UserPanel.cshtml",
+              "RelativeDocumentMoniker": "TeckBackClientMVC\\Views\\Home\\UserPanel.cshtml",
+              "ToolTip": "C:\\Users\\AhmadReza\\Desktop\\Identity_Server4\\IDP\\TeckBackClientMVC\\Views\\Home\\UserPanel.cshtml",
+              "RelativeToolTip": "TeckBackClientMVC\\Views\\Home\\UserPanel.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-16T13:38:19.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\AhmadReza\\Desktop\\Identity_Server4\\IDP\\TeckBackClientMVC\\Program.cs",
+              "RelativeDocumentMoniker": "TeckBackClientMVC\\Program.cs",
+              "ToolTip": "C:\\Users\\AhmadReza\\Desktop\\Identity_Server4\\IDP\\TeckBackClientMVC\\Program.cs",
+              "RelativeToolTip": "TeckBackClientMVC\\Program.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAADgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T06:44:31.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\AhmadReza\\Desktop\\Identity_Server4\\IDP\\IDP\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "IDP\\Views\\Account\\Login.cshtml",
@@ -139,12 +190,23 @@
               "RelativeToolTip": "IDP\\Views\\Account\\Login.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-15T09:00:34.42Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-15T09:00:34.42Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\AhmadReza\\Desktop\\Identity_Server4\\IDP\\IDP\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "IDP\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\AhmadReza\\Desktop\\Identity_Server4\\IDP\\IDP\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "IDP\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-15T12:23:34.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Extensions.cs",
               "DocumentMoniker": "C:\\Users\\AhmadReza\\Desktop\\Identity_Server4\\IDP\\IDP\\Quickstart\\Extensions.cs",
               "RelativeDocumentMoniker": "IDP\\Quickstart\\Extensions.cs",
@@ -156,31 +218,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "GrantsController.cs",
               "DocumentMoniker": "C:\\Users\\AhmadReza\\Desktop\\Identity_Server4\\IDP\\IDP\\Quickstart\\Grants\\GrantsController.cs",
               "RelativeDocumentMoniker": "IDP\\Quickstart\\Grants\\GrantsController.cs",
               "ToolTip": "C:\\Users\\AhmadReza\\Desktop\\Identity_Server4\\IDP\\IDP\\Quickstart\\Grants\\GrantsController.cs",
               "RelativeToolTip": "IDP\\Quickstart\\Grants\\GrantsController.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAADcAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAADcAAAAAAAAAAABBwDcAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-15T07:46:01.776Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "DeviceController.cs",
               "DocumentMoniker": "C:\\Users\\AhmadReza\\Desktop\\Identity_Server4\\IDP\\IDP\\Quickstart\\Device\\DeviceController.cs",
               "RelativeDocumentMoniker": "IDP\\Quickstart\\Device\\DeviceController.cs",
               "ToolTip": "C:\\Users\\AhmadReza\\Desktop\\Identity_Server4\\IDP\\IDP\\Quickstart\\Device\\DeviceController.cs",
               "RelativeToolTip": "IDP\\Quickstart\\Device\\DeviceController.cs",
-              "ViewState": "AgIAAMEAAAAAAAAAAAAAAGkAAABNAAAAAAAAAA==",
+              "ViewState": "AgIAAL8AAAAAAAAAAABBwGkAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-15T07:43:29.4Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "ConsentController.cs",
               "DocumentMoniker": "C:\\Users\\AhmadReza\\Desktop\\Identity_Server4\\IDP\\IDP\\Quickstart\\Consent\\ConsentController.cs",
               "RelativeDocumentMoniker": "IDP\\Quickstart\\Consent\\ConsentController.cs",
@@ -192,33 +254,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\AhmadReza\\Desktop\\Identity_Server4\\IDP\\IDP\\Program.cs",
-              "RelativeDocumentMoniker": "IDP\\Program.cs",
-              "ToolTip": "C:\\Users\\AhmadReza\\Desktop\\Identity_Server4\\IDP\\IDP\\Program.cs",
-              "RelativeToolTip": "IDP\\Program.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACAAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T07:32:39.305Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\AhmadReza\\Desktop\\Identity_Server4\\IDP\\IDP\\Quickstart\\Account\\AccountController.cs",
               "RelativeDocumentMoniker": "IDP\\Quickstart\\Account\\AccountController.cs",
               "ToolTip": "C:\\Users\\AhmadReza\\Desktop\\Identity_Server4\\IDP\\IDP\\Quickstart\\Account\\AccountController.cs",
               "RelativeToolTip": "IDP\\Quickstart\\Account\\AccountController.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAcwDkAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAcwDkAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T07:03:53.555Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-15T07:03:53.555Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "_Nav.cshtml",
               "DocumentMoniker": "C:\\Users\\AhmadReza\\Desktop\\Identity_Server4\\IDP\\IDP\\Views\\Shared\\_Nav.cshtml",
               "RelativeDocumentMoniker": "IDP\\Views\\Shared\\_Nav.cshtml",
@@ -230,7 +278,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "DiagnosticsViewModel.cs",
               "DocumentMoniker": "C:\\Users\\AhmadReza\\Desktop\\Identity_Server4\\IDP\\IDP\\Quickstart\\Diagnostics\\DiagnosticsViewModel.cs",
               "RelativeDocumentMoniker": "IDP\\Quickstart\\Diagnostics\\DiagnosticsViewModel.cs",
@@ -242,7 +290,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "ProcessConsentResult.cs",
               "DocumentMoniker": "C:\\Users\\AhmadReza\\Desktop\\Identity_Server4\\IDP\\IDP\\Quickstart\\Consent\\ProcessConsentResult.cs",
               "RelativeDocumentMoniker": "IDP\\Quickstart\\Consent\\ProcessConsentResult.cs",
@@ -254,7 +302,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\AhmadReza\\Desktop\\Identity_Server4\\IDP\\IDP\\Quickstart\\Home\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "IDP\\Quickstart\\Home\\ErrorViewModel.cs",
@@ -266,19 +314,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\AhmadReza\\Desktop\\Identity_Server4\\IDP\\IDP\\Quickstart\\Home\\HomeController.cs",
               "RelativeDocumentMoniker": "IDP\\Quickstart\\Home\\HomeController.cs",
               "ToolTip": "C:\\Users\\AhmadReza\\Desktop\\Identity_Server4\\IDP\\IDP\\Quickstart\\Home\\HomeController.cs",
               "RelativeToolTip": "IDP\\Quickstart\\Home\\HomeController.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAABBwAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-15T07:44:06.847Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "ExternalController.cs",
               "DocumentMoniker": "C:\\Users\\AhmadReza\\Desktop\\Identity_Server4\\IDP\\IDP\\Quickstart\\Account\\ExternalController.cs",
               "RelativeDocumentMoniker": "IDP\\Quickstart\\Account\\ExternalController.cs",

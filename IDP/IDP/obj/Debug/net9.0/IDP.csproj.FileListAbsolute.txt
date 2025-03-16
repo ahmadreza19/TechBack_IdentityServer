@@ -319,3 +319,4 @@ C:\Users\AhmadReza\Desktop\Identity_Server4\IDP\IDP\bin\Debug\net9.0\ru\Microsof
 C:\Users\AhmadReza\Desktop\Identity_Server4\IDP\IDP\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\AhmadReza\Desktop\Identity_Server4\IDP\IDP\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\AhmadReza\Desktop\Identity_Server4\IDP\IDP\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AhmadReza\Desktop\Identity_Server4\IDP\IDP\bin\Debug\net9.0\keys\is-signing-key-693F7E2A9AC848EED3624FCAC13A3134.json

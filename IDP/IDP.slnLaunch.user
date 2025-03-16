@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "IDP\\IDP.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "TeckBackClientMVC\\TeckBackClientMVC.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
