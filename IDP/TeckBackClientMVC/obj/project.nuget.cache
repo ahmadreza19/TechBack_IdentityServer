@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "LwG040OwLzo=",
+  "dgSpecHash": "ixjU2TuJQV4=",
   "success": true,
   "projectFilePath": "C:\\Users\\AhmadReza\\Desktop\\Identity_Server4\\IDP\\TeckBackClientMVC\\TeckBackClientMVC.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\AhmadReza\\.nuget\\packages\\duende.identitymodel\\7.0.0\\duende.identitymodel.7.0.0.nupkg.sha512",
     "C:\\Users\\AhmadReza\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\AhmadReza\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\AhmadReza\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",

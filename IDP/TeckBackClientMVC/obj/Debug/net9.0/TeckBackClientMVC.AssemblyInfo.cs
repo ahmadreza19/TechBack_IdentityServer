@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TeckBackClientMVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+909d4aaec2a3c9507deb78101b3db776e04354ab")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+50943d27a709c22dbf8732dbc512f7deb5fb03dd")]
 [assembly: System.Reflection.AssemblyProductAttribute("TeckBackClientMVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TeckBackClientMVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

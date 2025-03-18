@@ -292,3 +292,4 @@ C:\Users\AhmadReza\Desktop\Identity_Server4\IDP\TeckBackClientMVC\obj\Debug\net9
 C:\Users\AhmadReza\Desktop\Identity_Server4\IDP\TeckBackClientMVC\obj\Debug\net9.0\TeckBackClientMVC.pdb
 C:\Users\AhmadReza\Desktop\Identity_Server4\IDP\TeckBackClientMVC\obj\Debug\net9.0\TeckBackClientMVC.genruntimeconfig.cache
 C:\Users\AhmadReza\Desktop\Identity_Server4\IDP\TeckBackClientMVC\obj\Debug\net9.0\ref\TeckBackClientMVC.dll
+C:\Users\AhmadReza\Desktop\Identity_Server4\IDP\TeckBackClientMVC\bin\Debug\net9.0\Duende.IdentityModel.dll

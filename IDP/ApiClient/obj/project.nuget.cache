@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "UQ7/0cKVD0U=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\AhmadReza\\Desktop\\Identity_Server4\\IDP\\ApiClient\\ApiClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\AhmadReza\\.nuget\\packages\\duende.identitymodel\\7.0.0\\duende.identitymodel.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
